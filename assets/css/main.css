@@ -1,19 +1,23 @@
-body, html {
-  height: 100%;
-}
-.bg {
-  /* The image used */
-  background-image: url('../images/lake-mountains.jpg');
-
+body {
   /* Full height */
+  width: 100%;
   height: 100%;
+
+  /* The image used */
+  background-image: url('../images/mountain_blur.jpg');
 
   /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+
+  margin: 0;
+  padding: 0;
 }
 
-.title {
+.title-font {
   font-family: 'Fredericka the Great', cursive;
+}
+
+.icon {
+  text-align: center;
 }
