@@ -16,11 +16,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.profile {
+  height: 300px;
+  width: 300px;
+}
+
 .title-font {
   font-family: 'Architects Daughter', cursive;
   color: #e6f2ff;
 }
 
-.icon {
-  text-align: center;
+.fa {
+  height: 64px;
+  width: 64px;
+}
+
+.row>* {
+  width: auto;
 }
