@@ -30,3 +30,7 @@ body {
   height: 64px;
   width: 64px;
 }
+
+.row>* {
+  width: auto;
+}
