@@ -14,6 +14,7 @@ body {
   padding: 0;
 
   font-family: 'Roboto', sans-serif;
+  color: #e6f2ff;
 }
 
 .profile {
@@ -23,17 +24,39 @@ body {
 
 .title-font {
   font-family: 'Architects Daughter', cursive;
-  color: #e6f2ff;
 }
 
-.fa {
-  height: 64px;
-  width: 64px;
-}
-
+/* NOTE:  This is needed to prevent MDB from setting 'width: 100%' which breaks
+          our flexbox positioning
+*/
 .row>* {
   width: auto;
 }
-.row>* {
-  width: auto;
+
+
+/*
+  TODO: Figure out how to increase size of floating buttons (need to also 
+        figure out FA icon positioning inside buttons).
+.btn-floating.btn-lg {
+  height: 4rem;
+  width: 4rem;
+}
+*/
+
+/* Color palette selection based on: 
+  https://material.io/resources/color/#!/?view.left=0&view.right=0
+*/
+.btn-primary {
+  background: #ffc107;
+  color: #546e7a;
+}
+
+.btn-primary:hover {
+  background-color: #c79100 !important;
+  color: #546e7a;
+}
+
+.btn-primary:active {
+  background-color: #fff263 !important;
+  color: #546e7a;
 }
