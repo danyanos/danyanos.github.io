@@ -26,37 +26,46 @@ body {
   font-family: 'Architects Daughter', cursive;
 }
 
-/* NOTE:  This is needed to prevent MDB from setting 'width: 100%' which breaks
-          our flexbox positioning
-*/
-.row>* {
-  width: auto;
-}
-
-
 /*
-  TODO: Figure out how to increase size of floating buttons (need to also 
-        figure out FA icon positioning inside buttons).
-.btn-floating.btn-lg {
-  height: 4rem;
-  width: 4rem;
-}
+* ==========================================
+* Custom Circular Buttons
+* ==========================================
 */
 
-/* Color palette selection based on: 
-  https://material.io/resources/color/#!/?view.left=0&view.right=0
+/* TODO:  We need to make sure we handle webkit browsers for custom classes like
+          like these buttons
 */
-.btn-primary {
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.2), 0 2px 10px 0 rgba(0,0,0,.1);
+
   background: #ffc107;
   color: #546e7a;
+
+  transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+    transition-duration: 0.15s, 0.15s, 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s, 0s;
 }
 
-.btn-primary:hover {
+/* TODO:  Set a different box shadow here so that we'll transition to it? */
+.btn-circle:hover {
   background-color: #c79100 !important;
   color: #546e7a;
 }
 
-.btn-primary:active {
+.btn-circle:active {
   background-color: #fff263 !important;
   color: #546e7a;
+}
+
+.btn-circle i {
+  position: relative;
+  top: -1px;
 }
